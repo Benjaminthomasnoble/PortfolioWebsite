@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "The web developer portfolio for Benjamin Noble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjaminthomasnoble/PortfolioWebsite.git"
+  },
+  "author": "Benjamin Noble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benjaminthomasnoble/PortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/Benjaminthomasnoble/PortfolioWebsite#readme"
+}
