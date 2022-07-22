@@ -16,4 +16,7 @@
     "url": "https://github.com/Benjaminthomasnoble/PortfolioWebsite/issues"
   },
   "homepage": "https://github.com/Benjaminthomasnoble/PortfolioWebsite#readme"
+  "devDependencies": {
+    "11ty/eleventy": "^1.0.1"
+  }
 }
