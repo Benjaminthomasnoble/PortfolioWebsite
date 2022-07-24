@@ -200,8 +200,6 @@ strong {
     font-size: 30px;
 }
 
-
-
 #outro {
     color: rgb(0, 0, 0);
     font-size: 1em;
@@ -228,11 +226,13 @@ strong {
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
+        padding: 10px 0px 0px 0px;
         position: absolute;
         /* top: -1000px; */
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
+        background: #141E30;
     }
 
     .navbar-menu.active {
@@ -248,7 +248,8 @@ strong {
     }
 
     #navbar-logo {
-        /* padding-left: 25px; */
+        padding-left: 25px;
+        z-index: -2;
     }
 
     .navbar-toggle .bar {
@@ -256,6 +257,9 @@ strong {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
+        display: block;
+        cursor: pointer;
+        background: #fff;
     }
 
     .navbar-item {
@@ -264,9 +268,40 @@ strong {
 
     .navbar-links {
         text-align: center;
-        /* padding: 2rem; */
         width: 100%;
         display: table;
+    }
+
+    .navbar-btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 
