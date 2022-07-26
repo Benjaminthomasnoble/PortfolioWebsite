@@ -111,6 +111,7 @@ strong {
     align-items: center;
     /* padding: 0 1rem; */
     width: 100%;
+    margin-left: 35px;
 }
 
 .button {
@@ -274,7 +275,10 @@ strong {
     }
 
     .navbar-btn {
+        display: flex;
+        justify-content: center;
         padding-bottom: 2rem;
+        margin: 0;
     }
 
     .button {
