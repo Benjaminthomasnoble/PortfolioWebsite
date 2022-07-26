@@ -228,11 +228,11 @@ strong {
         width: 100%;
         padding: 10px 0px 0px 0px;
         position: absolute;
-        /* top: -1000px; */
+        top: -1000px;
         opacity: 1;
-        transition: all 0.5s ease;
         z-index: -1;
         background: #141E30;
+        transition: all 0.5s ease;
     }
 
     .navbar-menu.active {
@@ -241,10 +241,10 @@ strong {
         background: linear-gradient(to bottom, #243B55, #141E30);
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
         z-index: 99;
         height: 60vh;
         font-size: 1.6rem;
+        transition: all 1s ease;
     }
 
     #navbar-logo {
@@ -256,10 +256,11 @@ strong {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease-in-out;
         display: block;
         cursor: pointer;
         background: #fff;
+        z-index: 900;
+        transition: all .5s ease-in-out;
     }
 
     .navbar-item {
