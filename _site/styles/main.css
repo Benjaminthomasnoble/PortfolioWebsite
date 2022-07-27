@@ -238,8 +238,6 @@ strong {
 
     .navbar-menu.active {
         background: #141E30;
-        background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
-        background: linear-gradient(to bottom, #243B55, #141E30);
         top: 100%;
         opacity: 1;
         z-index: 99;
@@ -369,4 +367,9 @@ strong {
     .hero-description {
         font-size: 40px;
     }
+}
+
+/* Projects Section */
+.main {
+    background-color:
 }
