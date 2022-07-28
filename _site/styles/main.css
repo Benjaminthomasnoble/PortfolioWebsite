@@ -15,8 +15,6 @@ html {
 
 body {
     background: #141E30;
-    background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
-    background: linear-gradient(to bottom, #243B55, #141E30);
     color: rgb(0, 0, 0);
     font-size: 16px;
 }
@@ -48,7 +46,7 @@ strong {
 }
 
 .navbar {
-    background: none;
+    background: #141E30;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -139,6 +137,9 @@ strong {
     transition: all 0.3 ease;
 }
 
+.section {
+    margin: 50px 0px 50px 0px;
+}
 
 #wrapper {
     display: flex;
@@ -147,6 +148,7 @@ strong {
     height: 100%;
     min-height: 700px;
 }
+
 
 #main {
     background: rgba(255, 255, 255, 0.95);
@@ -157,6 +159,7 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 500px;
 }
 
 #portrait {
@@ -173,7 +176,7 @@ strong {
     margin-top: 5px;
 }
 
-#content {
+#about {
     text-align: center;
     max-width: 90%;
 }
@@ -210,6 +213,10 @@ strong {
 @media (max-width: 900px) {
     body {
         overflow: hidden;
+    }
+
+    #main {
+        margin-top: 25px;
     }
 
     .navbar-container {
@@ -322,4 +329,66 @@ strong {
         margin-bottom: 100vh;
         width: initial;
     }
+}
+
+/* Projects Section */
+
+#projects-title {
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    /* width: 100%; */
+    /* max-width: 1300px; */
+    padding: 0 50px;
+}
+
+.main-img-container {
+    /* border: 3px solid black; */
+    box-shadow: 3px 1px 5px rgb(129, 129, 129);
+}
+
+.main-img-container p {
+    font-family: font-family: "Work Sans", sans-serif;
+}
+
+.main-img-container a {
+    text-decoration: none;
+    font-family: font-family: "Work Sans", sans-serif;
+}
+
+.img-btn {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #b1b1b1;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.img-btn:hover {
+    background-color: rgb(129, 129, 129);
+    transform: translateY(3px);
+    transition: all 0.3 ease;
 }
