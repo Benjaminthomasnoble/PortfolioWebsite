@@ -17,8 +17,8 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#home" id="navbar-logo">
-                <img src="_site/images/btn-logo-white.png" alt="logo for benjamin noble" width="200" height="50">
+            <a href="#top" id="navbar-logo">
+                <img src="../_site/images/btn-logo-white.png" alt="logo for benjamin noble" width="200" height="50">
             </a>
             <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -27,14 +27,14 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-item">
-                    <a href="#about" class="navbar-links" id="about-page">About</a>
+                    <a href="#main" class="navbar-links" id="about-page">About</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#projects" class="navbar-links" id="projects-page">Projects</a>
                 </li>
-                <li class="navbar-item">
-                    <a href="#contact" class="navbar-links" id="contact-page">Contact</a>
-                </li>
+                <!-- <li class="navbar-item">
+                    <a href="#resume" class="navbar-links" id="contact-page">Resume</a>
+                </li> -->
                 <li class="navbar-btn">
                     <button class="button" onclick="document.location = 'mailto:benjamin4504@gmail.com'">Contact
                         Me</button>
@@ -49,7 +49,7 @@
                 <img src="images/ben.jpeg" alt="Benjamin Noble" width="200" height="200">
             </div>
 
-            <div id="content">
+            <div id="about">
                 <h1>Benjamin Noble</h1>
 
                 <h2>Front End Developer &bullet; Harrisburg, PA</h2>
@@ -60,19 +60,37 @@
                     my rapidly growing skills in a succesful company.
                 </p>
 
-                <div class="main" id="projects">
+                <h1 id="projects-title">Projects</h1>
+                <div class="section" id="projects">
                     <div class="main-container">
-                        <div class="main-img-container">
-                            <div class="main-img-card">ICON</div>
-                        </div>
-                        <div class="main-content">
-                            <h1>Projects Section</h1>
+                        <!-- <div class="main-content">
                             <h2>My completed projects</h2>
                             <p>This is where my project descriptions will go</p>
                             <button class="button" id="main-btn"
                                 onclick="document.location = 'mailto:benjamin4504@gmail.com'">Contact
                                 Me</button>
+                        </div> -->
+                        <div>
+                            <div class="main-img-container">
+                                <img class="main-img-card" src="../_site/images/nlc-thumb.jpeg"
+                                    alt="noble living co site thumbnail" width="300" height="300">
+                                <p>HTML - CSS</p>
+                                <a href="https://noblelivingco.netlify.app">
+                                    <button class="img-btn">Visit Site</button>
+                                </a>
+                            </div>
                         </div>
+                        <div>
+                            <div class="main-img-container">
+                                <img class="main-img-card" src="../_site/images/nlc-thumb.jpeg"
+                                    alt="noble living co site thumbnail" width="300" height="300">
+                                <p>HTML - Bootstrap - JavaScript</p>
+                                <a href="https://noblelivingco.netlify.app">
+                                    <button class="img-btn">Visit Site</button>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
