@@ -60,7 +60,7 @@ strong {
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    position: static;
+    position: sticky;
     top: 0;
     z-index: 999;
 }
