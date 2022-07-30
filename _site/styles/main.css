@@ -342,7 +342,6 @@ strong {
 }
 
 /* Projects Section */
-
 #projects-title {
     margin-bottom: 30px;
     margin-top: 100px;
@@ -351,20 +350,21 @@ strong {
 .main-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5%;
     align-items: center;
     justify-content: center;
+    padding: none;
     margin: 0 auto;
-    height: 90%;
+    width: 50%;
+    max-width: 1300px;
     z-index: 1;
-    /* width: 100%; */
-    /* max-width: 1300px; */
-    padding: 0 50px;
 }
 
 .main-img-container {
     /* border: 3px solid black; */
+    width: 100%;
+    height: auto;
     box-shadow: 3px 1px 5px rgb(129, 129, 129);
+    padding: none;
 }
 
 .main-img-container p {
@@ -388,7 +388,6 @@ strong {
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 4px;
     background: #b1b1b1;
     color: white;
     font-family: "Work Sans", sans-serif;
