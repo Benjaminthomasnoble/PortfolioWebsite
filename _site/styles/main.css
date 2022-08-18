@@ -276,8 +276,8 @@ strong {
         display: block;
         cursor: pointer;
         background: #fff;
-        z-index: 900;
         transition: all .5s ease-in-out;
+        z-index: 900;
     }
 
     .navbar-item {
@@ -311,6 +311,7 @@ strong {
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
+        transition: all .5s ease-in-out;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
