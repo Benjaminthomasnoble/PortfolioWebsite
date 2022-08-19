@@ -131,7 +131,9 @@ strong {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #b1b1b1;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
     color: white;
     font-family: "Work Sans", sans-serif;
     font-size: 1.25rem;
@@ -311,7 +313,7 @@ strong {
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
@@ -389,7 +391,9 @@ strong {
     width: 100%;
     border: none;
     outline: none;
-    background: #b1b1b1;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
     color: white;
     font-family: "Work Sans", sans-serif;
     font-size: 1.25rem;
