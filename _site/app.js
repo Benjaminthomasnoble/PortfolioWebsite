@@ -3,7 +3,7 @@ const menuLinks = document.querySelector('.navbar-menu');
 
 // Display Mobile Menu
 const mobileMenu = () => {
-    menu.classList.toggle('.is-active');
+    menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 
 };
