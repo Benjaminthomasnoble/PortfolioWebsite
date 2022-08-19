@@ -283,7 +283,7 @@ strong {
 /* Breakpoints */
 @media (max-width: 900px) {
     body {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .navbar-container {
@@ -394,8 +394,7 @@ strong {
     }
 
     #main {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin: 50px 0px 50px 0px;
         width: initial;
     }
 }
