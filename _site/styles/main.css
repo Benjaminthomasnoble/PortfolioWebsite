@@ -15,12 +15,8 @@ html {
 
 body {
     background: #16222A;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #3A6073, #16222A);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #3A6073, #16222A);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(0, 0, 0);
@@ -155,7 +151,6 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     min-height: 700px;
 }
 
@@ -169,8 +164,8 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 500px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #portrait {
@@ -221,13 +216,74 @@ strong {
     margin-top: 2em;
 }
 
+
+/* Projects Section */
+#projects-title {
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: none;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 1300px;
+    z-index: 1;
+}
+
+.main-img-container {
+    /* border: 3px solid black; */
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 1px 5px rgb(129, 129, 129);
+    padding: none;
+}
+
+.main-img-container p {
+    font-family: font-family: "Work Sans", sans-serif;
+}
+
+.main-img-container a {
+    text-decoration: none;
+    font-family: font-family: "Work Sans", sans-serif;
+}
+
+.img-btn {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #F2994A;
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.img-btn:hover {
+    background-color: rgb(129, 129, 129);
+    transform: translateY(3px);
+    transition: all 0.3 ease;
+}
+
+/* Breakpoints */
 @media (max-width: 900px) {
     body {
         overflow: hidden;
-    }
-
-    #main {
-        margin-top: 25px;
     }
 
     .navbar-container {
@@ -339,70 +395,7 @@ strong {
 
     #main {
         margin-top: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         width: initial;
     }
-}
-
-/* Projects Section */
-#projects-title {
-    margin-bottom: 30px;
-    margin-top: 100px;
-}
-
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    padding: none;
-    margin: 0 auto;
-    width: 50%;
-    max-width: 1300px;
-    z-index: 1;
-}
-
-.main-img-container {
-    /* border: 3px solid black; */
-    width: 100%;
-    height: auto;
-    box-shadow: 3px 1px 5px rgb(129, 129, 129);
-    padding: none;
-}
-
-.main-img-container p {
-    font-family: font-family: "Work Sans", sans-serif;
-}
-
-.main-img-container a {
-    text-decoration: none;
-    font-family: font-family: "Work Sans", sans-serif;
-}
-
-.img-btn {
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #F2994A;
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
-    background: linear-gradient(to right, #F2C94C, #F2994A);
-    color: white;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.25rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.img-btn:hover {
-    background-color: rgb(129, 129, 129);
-    transform: translateY(3px);
-    transition: all 0.3 ease;
 }
