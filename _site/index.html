@@ -107,6 +107,38 @@
             </div>
         </div>
     </div>
+
+
+    <div class="slider">
+        <img src="images/ben-2.jpg" alt="Image 1" class="slide active" width="800" height="200">
+        <img src="images/ben-2.jpg" alt="Image 2" class="slide" width="800" height="200">
+        <img src="images/ben-2.jpg" alt="Image 3" class="slide" width="800" height="200">
+    </div>
+
+    <script>
+        // Get all the slides
+        var slides = document.querySelectorAll('.slide');
+
+        // Keep track of the current slide
+        var currentSlide = 0;
+
+        // Show the first slide
+        slides[currentSlide].classList.add('active');
+
+        // Set an interval for the automatic slideshow
+        setInterval(function () {
+            // Remove the active class from the current slide
+            slides[currentSlide].classList.remove('active');
+
+            // Move to the next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Add the active class to the new slide
+            slides[currentSlide].classList.add('active');
+        }, 2000);
+    </script>
+
+
     <div id="empty-space">
 
     </div>
