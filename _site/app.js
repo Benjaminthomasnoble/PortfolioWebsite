@@ -20,14 +20,14 @@ const cursor = document.querySelector('.cursor');
 
 // List of sentences
 var _CONTENT = [
-    "online stores",
     "small business owners",
+    "online stores",
     "content creators",
     "photographers",
+    "freelancers",
     "bloggers",
     "counselors",
-    "shops",
-    "botiques"
+    "shops"
 ];
 
 // Current sentence being processed

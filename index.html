@@ -35,9 +35,10 @@
                 <!-- <li class="navbar-item">
                     <a href="#resume" class="navbar-links" id="contact-page">Resume</a>
                 </li> -->
-                <li class="navbar-btn">
-                    <button class="button" onclick="document.location = 'mailto:benjamin4504@gmail.com'">Contact
-                        Me</button>
+                <li class="navbar-btn navbar-item">
+                    <a class="btn-link" href="#cta-form">
+                        <button class="button">Free Quote</button>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -45,25 +46,80 @@
 
     <div id="wrapper">
         <div id="main">
-            <div id="portrait">
+            <div id="hero">
+                <div class="hero-inner-wrapper">
+                    <div class="hero-col hero-text">
+                        <h1 class="ht">Benjamin Noble</h1>
+                        <p id="">Web Designer/Developer</p>
+                        <!-- <h2>Web Designer/Developer &bullet; Harrisburg, PA</h2> -->
+                        <div class="cursor-txt">
+                            <h2 class="ht">
+                                I design and create beautiful and affordable websites for <span id="text"></span>
+                                <span class="cursor"></span>
+                            </h2>
+                        </div>
+                        <a class="btn-link" href="#cta-form">
+                            <button class="button">Free Quote</button>
+                        </a>
+                    </div>
+                    <div id="portrait" class="hero-col">
+                        <img src="images/ben-2.jpg" alt="Benjamin Noble" width="350" height="350"
+                            alt="picture of man in blue plaid shirt">
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="portrait">
+                <img src="images/ben-2.jpg" alt="Benjamin Noble" width="200" height="200"
+                    alt="picture of man in blue plaid shirt">
+            </div> -->
+
+
+            <!-- <div id="portrait">
                 <img src="images/ben-2.jpg" alt="Benjamin Noble" width="200" height="200"
                     alt="picture of man in blue plaid shirt">
             </div>
             <h1>Benjamin Noble</h1>
 
-            <h2>Web Designer/Developer &bullet; Harrisburg, PA</h2>
+            <h2>Web Designer/Developer &bullet; Harrisburg, PA</h2> -->
             <div id="hero">
+                <div class="section-heading">
+                    <h1> How Important Is A Great Website?</h1>
+                    <p>Having a functional custom website has never been more important experiencing growth in your
+                        business and without it you'll continue to face a number of problems:
+                    </p>
+
+                </div>
                 <div class="hero-inner-wrapper">
                     <div class="hero-col">
                         <img src="../_site/images/ben-computer.jpg" alt="">
                     </div>
-                    <div class="hero-col">
-                        <h1>
-                            I design and create beautiful websites for <span id="text""></span><span class="
-                                cursor"></span>
-                        </h1>
+                    <div class="hero-col section-text">
+                        <ul>
+                            <li class="section-list">Your website will not be user-friendly and will not attract new
+                                customers</li>
+                            <li class="section-list">Your online presence will be lackluster, making it difficult to
+                                stand out from the
+                                competition</li>
+                            <li class="section-list">Your brand will not be accurately represented online, hindering
+                                your growth and success
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <p class="section-heading">As a business owner, you already face a lot of challenges. You’re outdated or
+                    non existent
+                    website shouldn’t be one of them. Attracting new customers to your brand and quickly driving
+                    them toward your products is essential to a thriving business. A strong online presence is the
+                    still the best and most cost effective way to do that. A beautiful, functional website will give
+                    them that positive first impression that will convert them from a lead to a customer. As a web
+                    developer, I have the expertise to design and create custom website that will not only build
+                    your brand, but help you reach that next level with your business. With a focus on customer
+                    experience, I work closely with my clients to create beautiful websites that are fully
+                    customized to your specific needs.
+                </p>
+                <a class="btn-link" href="#cta-form">
+                    <button class="button">Free Quote</button>
+                </a>
             </div>
 
             <div class="projects-wrapper">
@@ -74,8 +130,8 @@
                             <div class="main-img-container">
                                 <img class="main-img-card" src="images/nlc-screenshot.jpeg"
                                     alt="noble living co site thumbnail" width="750" height="387">
-                                <h2>Web Design | Web Development | Website Copywriting | Online Store Setup | Email and
-                                    Social Media Marketing</h2>
+                                <p>Web Design | Web Development | Website Copywriting | Online Store Setup | Email and
+                                    Social Media Marketing</p>
                                 <!-- <p>HTML - CSS - Javascript</p> -->
                                 <a href="https://noblelivingco.com">
                                     <button class="img-btn">Visit Site</button>
@@ -86,9 +142,20 @@
                             <div class="main-img-container">
                                 <img class="main-img-card" src="images/epic-screenshot.jpeg"
                                     alt="noble living co site thumbnail" width="1000" height="516">
-                                <h2>Web Design | Web Development | Website Copywriting</h2>
+                                <p>Web Design | Web Development | Website Copywriting</p>
                                 <!-- <p>HTML - Bootstrap - Javascript</p> -->
                                 <a href="https://epiccounselingsolutions.com/">
+                                    <button class="img-btn">Visit Site</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="main-img-container">
+                                <img class="main-img-card" src="images/cumberland-omt.jpeg"
+                                    alt="noble living co site thumbnail" width="1000" height="516">
+                                <p>Web Design | Web Development | Website Copywriting</p>
+                                <!-- <p>HTML - Bootstrap - Javascript</p> -->
+                                <a href="https://cumberlandomt.com/">
                                     <button class="img-btn">Visit Site</button>
                                 </a>
                             </div>
@@ -97,7 +164,12 @@
 
                 </div>
             </div>
-
+            <div id="cta-form">
+                <h1>Get Your Free Quote</h1>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeX1MTaX1zxbC9VAz84fQaqmyL8Q_vvxng4NZlMqaN25xhrOA/viewform?embedded=true"
+                    width="640" height="2634" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
             <div id="icons">
                 <a href="https://github.com/Benjaminthomasnoble">
                     <i class="devicon-github-original colored"></i>

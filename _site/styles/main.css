@@ -24,13 +24,12 @@ body {
 }
 
 h1 {
-    margin: 1em 0 0;
     text-align: center;
     font-size: 2.5rem;
 }
 
 h2 {
-    color: rgb(102, 102, 102);
+    color: #171717;
     font-size: 1.25em;
     margin: 0.5em 0 0;
 }
@@ -40,15 +39,11 @@ hr {
 }
 
 p {
-    color: rgb(102, 102, 102);
+    color: #171717;
     font-size: 1.125em;
     line-height: 1.6em;
-    margin: 1em 0 0;
 }
 
-strong {
-    color: rgb(0, 0, 0);
-}
 
 .navbar {
     background: #1c2b36;
@@ -84,11 +79,16 @@ strong {
 .navbar-menu {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     list-style: none;
+    width: 80%;
 }
 
 .navbar-item {
+    font-size: 1.5rem;
     height: 80px;
+    width: 33%;
+    text-align: left;
 }
 
 .navbar-links {
@@ -96,7 +96,6 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
@@ -112,9 +111,6 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 1rem; */
-    width: 100%;
-    margin-left: 35px;
 }
 
 .button {
@@ -123,8 +119,7 @@ strong {
     align-items: center;
     text-decoration: none;
     padding: 10px 20px;
-    height: 100%;
-    width: 100%;
+    width: 180px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -133,7 +128,7 @@ strong {
     background: linear-gradient(to right, #F2C94C, #F2994A);
     color: white;
     font-family: "Work Sans", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -142,6 +137,10 @@ strong {
     background-color: rgb(129, 129, 129);
     transform: translateY(3px);
     transition: all 0.3 ease;
+}
+
+.btn-link {
+    text-decoration: none;
 }
 
 .section {
@@ -165,14 +164,14 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 
 #hero {
-    margin-top: 15px;
-    width: 100%;
+    width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -180,7 +179,8 @@ strong {
 .hero-inner-wrapper {
     display: flex;
     flex-direction: row;
-    margin-top: 200px;
+    justify-content: space-evenly;
+    align-items: center;
     min-height: 70vh;
     width: 100%;
     /* background: #F2994A;
@@ -192,25 +192,47 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    padding: 0px 15px 0px 15px;
+    width: 60%;
 }
+
+.hero-text {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+}
+
+.hero-text p {
+    margin: 0px;
+}
+
+.hero-text h1 {
+    margin: 0px;
+}
+
+.ht {
+    text-align: left;
+}
+
 
 .hero-col img {
     max-width: 100%;
     box-shadow: 0px 0px 5px black;
 }
 
+.hero-col button {
+    margin-top: 50px;
+}
 
-#hero h1 {
-    color: black;
-
+.cursor-txt {
+    padding: 25px 0px 0px 0px;
+    height: 50px;
 }
 
 .cursor {
     display: inline-block;
+    color: black;
     width: 0.1em;
-    height: 1.0em;
+    height: .8em;
     animation: cursor-animation 1s infinite;
 }
 
@@ -218,7 +240,7 @@ strong {
 
     from,
     to {
-        background-color: white;
+        background-color: black;
     }
 
     50% {
@@ -227,22 +249,40 @@ strong {
 }
 
 #portrait {
-    background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
-    height: 210px;
-    margin: -65px auto 0;
-    text-align: center;
-    width: 210px;
+    height: 510px;
+    width: 510px;
 }
 
 #portrait img {
     border-radius: 50%;
     margin-top: 5px;
+    max-width: 100%;
 }
 
 .projects-wrapper {
     text-align: center;
-    max-width: 50%;
+    max-width: 100%;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.section-list {
+    padding: 5px 0px;
+}
+
+#cta-form {
+    margin-top: 100px;
 }
 
 #icons {
@@ -287,7 +327,7 @@ strong {
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 5%;
     align-items: center;
     justify-content: center;
