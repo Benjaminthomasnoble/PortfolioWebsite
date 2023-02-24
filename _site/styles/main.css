@@ -44,6 +44,12 @@ p {
     line-height: 1.6em;
 }
 
+li {
+    color: #171717;
+    font-size: 1.125em;
+    line-height: 1.6em;
+}
+
 
 .navbar {
     background: #1c2b36;
@@ -277,8 +283,16 @@ p {
     margin-left: 30px;
 }
 
+.pitch-section-text {
+    text-align: left;
+}
+
 .section-list {
     padding: 5px 0px;
+}
+
+.services-text {
+    text-align: left;
 }
 
 #cta-form {
