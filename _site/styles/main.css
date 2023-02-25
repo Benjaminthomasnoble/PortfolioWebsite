@@ -151,6 +151,7 @@ li {
 
 .section {
     margin: 50px 0px 50px 0px;
+    width: 100%;
 }
 
 #wrapper {
@@ -358,10 +359,10 @@ li {
 
 /* Projects Section */
 #projects {
-    width: 100%;
+    margin-top: 50px;
 }
 
-#projects-title {
+#projects h1 {
     margin-bottom: 30px;
     margin-top: 100px;
 }
