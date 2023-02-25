@@ -70,7 +70,6 @@ li {
     height: 120px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -81,6 +80,15 @@ li {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
 }
 
 .navbar-menu {
@@ -126,7 +134,7 @@ li {
     align-items: center;
     text-decoration: none;
     padding: 10px 20px;
-    width: 180px;
+    /* width: 0px; */
     border: none;
     outline: none;
     border-radius: 4px;
@@ -134,7 +142,7 @@ li {
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
     background: linear-gradient(to right, #F2C94C, #F2994A);
     color: white;
-    font-family: "Work Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -194,9 +202,6 @@ li {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    /* background: #F2994A;
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
-    background: linear-gradient(to right, #F2C94C, #F2994A); */
 }
 
 .hero-col {
@@ -230,7 +235,7 @@ li {
 }
 
 .hero-col button {
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .cursor-txt {
@@ -575,7 +580,7 @@ li {
 
 
 /* Breakpoints */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     body {
         /* overflow: hidden; */
     }
@@ -592,7 +597,7 @@ li {
 
     .navbar-menu {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         margin: 0;
         width: 100%;
         padding: 10px 0px 0px 0px;
@@ -605,16 +610,22 @@ li {
     }
 
     .navbar-menu.active {
-        background: #141E30;
-        background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
-        background: linear-gradient(to bottom, #243B55, #141E30);
+        background: #1c2b36;
+        /* background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+        background: linear-gradient(to bottom, #243B55, #141E30); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         top: 100%;
         opacity: 1;
         z-index: 99;
-        height: 60vh;
+        height: 40vh;
         font-size: 1.6rem;
         transition: all 1s ease;
     }
+
+
 
     #navbar-logo {
         padding-left: 25px;
@@ -632,7 +643,7 @@ li {
     }
 
     .navbar-item {
-        width: 100%;
+        width: 50%;
     }
 
     .navbar-links {
@@ -642,19 +653,7 @@ li {
     }
 
     .navbar-btn {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2rem;
-        margin: 0;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
+        display: none;
     }
 
     #mobile-menu {
@@ -690,5 +689,12 @@ li {
     #main {
         margin: 50px 0px 50px 0px;
         width: initial;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero-inner-wrapper {
+        flex-direction: column;
+
     }
 }
