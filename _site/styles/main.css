@@ -23,6 +23,10 @@ body {
     font-size: 20px;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -186,6 +190,7 @@ li {
 
 .inner-wrapper {
     padding: 0px 50px 0px 50px;
+    max-width: 100%;
 }
 
 #hero {
@@ -389,7 +394,7 @@ li {
     margin-top: 100px;
 }
 
-.main-container {
+.projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
@@ -658,7 +663,7 @@ li {
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 35%;
         right: 5%;
         transform: translate(5%, 20%);
         transition: all 0.5s ease-in-out;
@@ -693,8 +698,60 @@ li {
 }
 
 @media (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+
+    .inner-wrapper {
+        padding: 0;
+    }
+
     .hero-inner-wrapper {
         flex-direction: column;
-
     }
+
+    .hero-text {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-col {
+        width: 100%;
+    }
+
+    #portrait {
+        height: auto;
+        padding: 25px 0px 25px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #portrait img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-text {
+        margin-left: 0px;
+    }
+
+    .services-section-inner-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ss-col {
+        width: 100%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
 }
