@@ -17,7 +17,6 @@ const typed = document.getElementById('typed');
 const cursor = document.querySelector('.cursor');
 
 // Text Typing Effect
-
 // List of sentences
 var _CONTENT = [
     "small business owners",
