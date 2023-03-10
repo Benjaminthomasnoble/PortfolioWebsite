@@ -582,6 +582,10 @@ li {
     font-weight: 700;
 }
 
+.price-prefix {
+    font-size: 12px;
+}
+
 
 
 /* Breakpoints */
