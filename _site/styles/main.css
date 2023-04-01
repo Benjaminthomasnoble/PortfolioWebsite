@@ -25,6 +25,7 @@ body {
 
 iframe {
     max-width: 100%;
+    height: 1200px;
 }
 
 h1 {
