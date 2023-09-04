@@ -15,7 +15,7 @@ html {
 
 body {
     background: #16222A;
-    background: -webkit-linear-gradient(to top, #3A6073, #16222A);
+    background: -webkit-linear-gradient(to top, #3A6073, #16222a);
     background: linear-gradient(to top, #3A6073, #16222A);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -79,6 +79,7 @@ li {
     padding: 0 50px;
 }
 
+
 #navbar-logo {
     width: 100%;
     height: auto;
@@ -86,6 +87,7 @@ li {
     align-items: center;
     cursor: pointer;
 }
+
 
 .logo-container {
     display: flex;
